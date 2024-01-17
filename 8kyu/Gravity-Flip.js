@@ -1,7 +1,1 @@
-const flip= (d, a) =>{
-    if( d === 'R') {
-      return a.sort((x, y) => x - y)
-    } else {
-      return a.sort((x, y) => y - x) 
-    }
-  }
+const flip = (d, a) => a.sort((x, y) => d === 'R' ? x - y : y - x);
